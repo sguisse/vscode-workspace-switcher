@@ -1,6 +1,6 @@
 {
   "name": "sgu-workspace-switcher",
-  "displayName": "Workspace Switcher",
+  "displayName": "Switch between workspaces with a single click",
   "description": "Switches between opened and recent VS Code workspaces in the Explorer",
   "version": "1.0.0",
   "publisher": "sguisse",
