@@ -92,6 +92,6 @@ fi
 
 echo "✅ Deployment pipeline executed successfully!"
 echo "📢 Your extension is now live on the VS Code Marketplace. Please allow a few minutes for the changes to propagate."
-echo "🌐 View your extension: https://marketplace.visualstudio.com/items?itemName=sguisse.workspace-switcher"
+echo "🌐 View your extension: https://marketplace.visualstudio.com/items?itemName=sguisse.sgu-workspace-switcher"
 echo "🔗 View your publisher profile: https://marketplace.visualstudio.com/manage/publishers/sguisse"
 echo "🎉 Thank you for using the Workspace Switcher extension! Happy coding! 🚀"

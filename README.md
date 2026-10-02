@@ -1,6 +1,7 @@
 # Workspace Switcher
 
-Adds a custom tree view section named **Workspace Switcher** inside VS Code's Explorer sidebar.
+Adds a custom tree view section named **[Workspace Switcher](https://github.com/sguisse/vscode-workspace-switcher)** inside VS Code's Explorer sidebar.
+
 
 
 ## Overview
