@@ -1,9 +1,10 @@
 {
-  "name": "vscode-workspace-switcher",
-  "displayName": "🔀 Workspace Switcher",
+  "name": "workspace-switcher",
+  "displayName": "Workspace Switcher",
   "description": "Switches between opened and recent VS Code workspaces in the Explorer",
   "version": "1.0.0",
-  "publisher": "local-dev",
+  "publisher": "sguisse",
+  "homepage": "https://github.com/sguisse/vscode-workspace-switcher",
   "repository": {
     "type": "git",
     "url": "https://github.com/sguisse/vscode-workspace-switcher.git"
@@ -15,6 +16,15 @@
   "categories": [
     "Other"
   ],
+  "keywords": [
+    "workspace",
+    "usability",
+    "project",
+    "switcher",
+    "window",
+    "recent"
+  ],
+  "icon": "assets/icons/extension.png",
   "activationEvents": [
     "onStartupFinished"
   ],
@@ -23,7 +33,7 @@
     "views": {
       "explorer": [
         {
-          "id": "workspaceSwitcherView",
+          "id": "workspaceSwitcher",
           "name": "Workspace Switcher",
           "icon": "$(folder)",
           "contextualTitle": "Workspace Switcher"
@@ -37,7 +47,7 @@
         "icon": "$(refresh)"
       },
       {
-        "command": "workspaceSwitcher.switchWorkspace",
+        "command": "workspaceSwitcher.switchOpenedWorkspace",
         "title": "Switch to Workspace"
       },
       {
@@ -58,7 +68,7 @@
     "configuration": {
       "title": "Workspace Switcher",
       "properties": {
-        "workspaceSwitcher.recentWorkspacesLimit": {
+        "workbench.workspaceSwitcher.maxRecentWorkspaces": {
           "type": "integer",
           "default": 10,
           "minimum": 0,
@@ -70,19 +80,19 @@
       "view/title": [
         {
           "command": "workspaceSwitcher.refresh",
-          "when": "view == workspaceSwitcherView",
+          "when": "view == workspaceSwitcher",
           "group": "navigation"
         }
       ],
       "view/item/context": [
         {
           "command": "workspaceSwitcher.closeWorkspace",
-          "when": "view == workspaceSwitcherView && viewItem == openedWorkspaceItem",
+          "when": "view == workspaceSwitcher && viewItem == opened",
           "group": "inline"
         },
         {
           "command": "workspaceSwitcher.removeRecentWorkspace",
-          "when": "view == workspaceSwitcherView && viewItem == recentWorkspaceItem",
+          "when": "view == workspaceSwitcher && viewItem == recent",
           "group": "inline"
         }
       ]
