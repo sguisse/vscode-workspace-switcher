@@ -1,5 +1,5 @@
 {
-  "name": "workspace-switcher",
+  "name": "vscode-workspace-switcher",
   "displayName": "Workspace Switcher",
   "description": "Switches between opened and recent VS Code workspaces in the Explorer",
   "version": "1.0.0",
