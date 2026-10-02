@@ -81,7 +81,7 @@ npx @vscode/vsce package
 echo "🌐 Publishing to the Visual Studio Code Marketplace..."
 # If this is your first time publishing, vsce will halt and prompt for your Azure DevOps PAT.
 # https://dev.azure.com/sebguisse/_usersSettings/tokens
-#npx @vscode/vsce publish --pat "$AZURE_DEVOPS_EXT_PAT"
+npx @vscode/vsce publish --pat "$AZURE_DEVOPS_EXT_PAT"
 
 
 # ─── 6. Finalization ────────────────────────────────────────────────────────────

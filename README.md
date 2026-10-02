@@ -5,8 +5,10 @@ Adds a custom tree view section named **Workspace Switcher** inside VS Code's Ex
 
 ## Overview
 
-The Workspace Switcher extension provides a convenient way to manage and switch between your opened and recent VS Code workspaces directly from the Explorer sidebar. It helps you keep track of your workspaces and quickly access the ones you need.
-![Workspace Switcher](assets/workspace-switcher.png)
+* The Workspace Switcher extension provides a convenient way to manage and switch between your opened and recent VS Code workspaces directly from the Explorer sidebar.
+* It helps you keep track of your workspaces and quickly access the ones you need.
+* See screenshots below for an overview of the extension:
+  * ![Workspace Switcher](assets/workspace-switcher.png)
 
 ## Features
 
