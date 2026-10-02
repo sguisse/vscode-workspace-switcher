@@ -1,0 +1,16 @@
+out
+dist*
+node_modules
+.vscode-test/
+*.vsix
+.history
+**/target
+exported-files
+*.bak*
+graphify-out
+sandbox
+__pycache__
+zz-tmp/rvng-jqassistant-analysis
+webview/src/features/explorer/wksp-cnt-graph/data/sample-ast-data-for-dev.json
+copilot-models-custom.json
+update.yaml

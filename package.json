@@ -1,0 +1,104 @@
+{
+  "name": "vscode-workspace-switcher",
+  "displayName": "🔀 Workspace Switcher",
+  "description": "Switches between opened and recent VS Code workspaces in the Explorer",
+  "version": "1.0.0",
+  "publisher": "local-dev",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sguisse/vscode-workspace-switcher.git"
+  },
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.80.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "activationEvents": [
+    "onStartupFinished"
+  ],
+  "main": "./out/extension.js",
+  "contributes": {
+    "views": {
+      "explorer": [
+        {
+          "id": "workspaceSwitcherView",
+          "name": "Workspace Switcher",
+          "icon": "$(folder)",
+          "contextualTitle": "Workspace Switcher"
+        }
+      ]
+    },
+    "commands": [
+      {
+        "command": "workspaceSwitcher.refresh",
+        "title": "Refresh Workspaces",
+        "icon": "$(refresh)"
+      },
+      {
+        "command": "workspaceSwitcher.switchWorkspace",
+        "title": "Switch to Workspace"
+      },
+      {
+        "command": "workspaceSwitcher.closeWorkspace",
+        "title": "Close Workspace",
+        "icon": "$(close)"
+      },
+      {
+        "command": "workspaceSwitcher.openRecentWorkspace",
+        "title": "Open Recent Workspace"
+      },
+      {
+        "command": "workspaceSwitcher.removeRecentWorkspace",
+        "title": "Remove Recent Workspace",
+        "icon": "$(trash)"
+      }
+    ],
+    "configuration": {
+      "title": "Workspace Switcher",
+      "properties": {
+        "workspaceSwitcher.recentWorkspacesLimit": {
+          "type": "integer",
+          "default": 10,
+          "minimum": 0,
+          "description": "Maximum number of recent workspaces shown in the Workspace Switcher view."
+        }
+      }
+    },
+    "menus": {
+      "view/title": [
+        {
+          "command": "workspaceSwitcher.refresh",
+          "when": "view == workspaceSwitcherView",
+          "group": "navigation"
+        }
+      ],
+      "view/item/context": [
+        {
+          "command": "workspaceSwitcher.closeWorkspace",
+          "when": "view == workspaceSwitcherView && viewItem == openedWorkspaceItem",
+          "group": "inline"
+        },
+        {
+          "command": "workspaceSwitcher.removeRecentWorkspace",
+          "when": "view == workspaceSwitcherView && viewItem == recentWorkspaceItem",
+          "group": "inline"
+        }
+      ]
+    }
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "compile": "tsc -p ./",
+    "watch": "tsc -watch -p ./"
+  },
+  "dependencies": {
+    "js-yaml": "^5.4.2"
+  },
+  "devDependencies": {
+    "@types/node": "^18.0.0",
+    "@types/vscode": "^1.80.0",
+    "typescript": "^5.0.0"
+  }
+}

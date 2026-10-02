@@ -1,0 +1,35 @@
+{
+  "version": 1,
+  "skills": {
+    "automations-toolkit": {
+      "source": "SAP/leanix-ai-plugins",
+      "sourceType": "github",
+      "skillPath": "skills/automations-toolkit/SKILL.md",
+      "computedHash": "7d9528dfca4d7c1af6e26c15aa48a6e3e86d2cfb299af71863e53cc530b1eaab"
+    },
+    "calculations-toolkit": {
+      "source": "SAP/leanix-ai-plugins",
+      "sourceType": "github",
+      "skillPath": "skills/calculations-toolkit/SKILL.md",
+      "computedHash": "403bb55b194894e3517ba6ab58b39a228702492dc5b58debf40c4ac6a1f265c8"
+    },
+    "compose-diagram": {
+      "source": "SAP/leanix-ai-plugins",
+      "sourceType": "github",
+      "skillPath": "skills/compose-diagram/SKILL.md",
+      "computedHash": "9c3180ba5d787a53e550cbe2b78f843e986e952f9fbe149a6a48d5ce65d02b27"
+    },
+    "fact-sheet-search": {
+      "source": "SAP/leanix-ai-plugins",
+      "sourceType": "github",
+      "skillPath": "skills/fact-sheet-search/SKILL.md",
+      "computedHash": "d3262c9e21ac90b42b365ec6558ac8e26cc9beda233c498f069805baf467e18c"
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "sourceType": "github",
+      "skillPath": "skills/react-best-practices/SKILL.md",
+      "computedHash": "3219a1944e404ffc14d1d9d6aef6dd2e3855b81387ee0a044ccbfe14d34c2357"
+    }
+  }
+}
